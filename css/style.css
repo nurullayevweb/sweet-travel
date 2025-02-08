@@ -163,6 +163,10 @@ main {
     flex-grow: 0 !important;
 }
 
+.nav__links .show {
+    box-shadow: none !important;
+}
+
 .web__nav .navbar-toggler {
     border-radius: 50% !important;
     padding: 10px !important;
@@ -1082,9 +1086,11 @@ main {
 .wooter__all {
     gap: 70px;
 }
-.footer__top{
+
+.footer__top {
     gap: 60px;
 }
+
 .footer__logo {
     max-width: 247px;
 }
@@ -1117,7 +1123,8 @@ main {
     /* 142.857% */
     color: #B6B8BD;
 }
-.footer__bottom{
+
+.footer__bottom {
     width: 100%;
     padding: 24px;
     padding-left: 0;
@@ -1140,13 +1147,14 @@ main {
     transition: opacity 0.3s, transform 0.3s;
     opacity: 0;
     filter: drop-shadow(0px 6px 24px rgba(27, 82, 188, 0.70));
-    transform: translateY(100px); /* Animatsiya uchun boshlang‘ich holat */
+    transform: translateY(100px);
+    /* Animatsiya uchun boshlang‘ich holat */
 }
 
 .top-button.show {
     opacity: 1;
     transform: translateY(0);
-    animation: pulse 1.5s infinite alternate; 
+    animation: pulse 1.5s infinite alternate;
 }
 
 .top-button:hover {
@@ -1156,20 +1164,25 @@ main {
 
 @keyframes pulse {
     0% {
-        transform: scale(1); /* Oddiy holat */
+        transform: scale(1);
+        /* Oddiy holat */
     }
+
     50% {
-        transform: scale(1.1); /* 10% kattalashadi */
+        transform: scale(1.1);
+        /* 10% kattalashadi */
     }
+
     100% {
-        transform: scale(1); /* Yana oddiy holatga qaytadi */
+        transform: scale(1);
+        /* Yana oddiy holatga qaytadi */
     }
 }
 
 
-@media (max-width: 908px) { 
+@media (max-width: 908px) {
     .footer__links a {
         border: 0 !important;
         padding: 0 !important;
     }
- }
+}
